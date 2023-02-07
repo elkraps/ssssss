@@ -5,7 +5,8 @@ import NavBar from "./components/NavBar";
 import {observer} from "mobx-react-lite";
 import {Context} from "./index";
 import {check} from "./http/userAPI";
-import {Spinner} from "react-bootstrap";
+import {Container, Spinner} from "react-bootstrap";
+import './App.css';
 
 const App = observer(() => {
     const {user} = useContext(Context)
@@ -24,8 +25,10 @@ const App = observer(() => {
 
     return (
         <BrowserRouter>
+        <Container className='container'>
             <NavBar />
             <AppRouter />
+        </Container>
         </BrowserRouter>
     );
 });
