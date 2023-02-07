@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 18px;
+}
+
+.container {
+    width: 390px;
+    /* background-color: rgb(226, 248, 255); */
+}
+
+.navbar {
+    background-color: rgb(248, 168, 24);
+    
+}
+
+.navlink:active,
+.navlink:hover,
+.navlink {
+    color: white;
+    font-style: normal;
+    font-size: large;
+    text-decoration: none;
+}
+
